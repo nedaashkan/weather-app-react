@@ -1,0 +1,26 @@
+.CodeInformation .github-link,
+.CodeInformation .linkedin-link,
+.CodeInformation .netlify-link {
+  color: #afdfff;
+}
+.CodeInformation .social-media-links:hover {
+  color: #99caeb;
+  text-shadow: 0 0 1px #99caeb;
+}
+
+.CodeInformation a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.CodeInformation a:hover {
+  color: #ffffff;
+}
+.CodeInformation .active {
+  color: #afdfff;
+  cursor: default;
+}
+
+.CodeInformation .active:hover {
+  text-decoration: none;
+  color: #afdfff;
+}

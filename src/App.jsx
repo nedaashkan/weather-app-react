@@ -1,12 +1,12 @@
 import "./App.css";
-import SearchEngine from "./SearchEngine";
-import LocationCountry from "./LocationCountry";
-import TemperatureIcon from "./TemperatureIcon";
-import DateWeather from "./DateWeather";
-import DayTime from "./DayTime";
-import WeatherInformation from "./WeatherInformation";
-import WeeklyForecast from "./WeeklyForecast";
-import CodeInformation from "./CodeInformation";
+import SearchEngine from "./component/SearchEngine";
+import LocationCountry from "./component/LocationCountry";
+import TemperatureIcon from "./component/TemperatureIcon";
+import DateWeather from "./component/DateWeather";
+import DayTime from "./component/DayTime";
+import WeatherInformation from "./component/WeatherInformation";
+import WeeklyForecast from "./component/WeeklyForecast";
+import CodeInformation from "./component/CodeInformation";
 
 function App() {
   return (

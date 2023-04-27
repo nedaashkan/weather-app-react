@@ -1,0 +1,45 @@
+.SearchButton .search-box {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 31px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0 12px;
+  border-radius: 8px 0 0 8px;
+  outline: 0;
+}
+.SearchButton ::placeholder {
+  color: #ffffff;
+}
+.SearchButton .search-icon-box {
+  display: flex;
+}
+.SearchButton .search-btn {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0 8px 8px 0;
+  height: 54px;
+  padding: 0 12px;
+}
+.SearchButton .current-btn {
+  color: #ffffff;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  height: 54px;
+  padding: 0 12px;
+  transition: all ease-in-out 200ms;
+}
+.SearchButton .current-btn:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.123);
+}
+.SearchButton input,
+.SearchButton select,
+.SearchButton textarea {
+  color: #ffffff;
+}
+.SearchButton .search-icon {
+  font-size: 20px;
+  color: #ffffff;
+}
