@@ -15,7 +15,7 @@ export default function CodeInformation() {
           </a>
           , open-sourced on
           <a
-            href="://"
+            href="https://github.com/nedaashkan/weather-app-react"
             target="_blank"
             rel="noopener noreferrer"
             className="github-link social-media-links"
@@ -24,7 +24,7 @@ export default function CodeInformation() {
           </a>
           , hosted on
           <a
-            href="://"
+            href="https://admirable-fox-42f161.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="netlify-link social-media-links"
