@@ -9,7 +9,7 @@ export default function LocationCountry() {
           <div className="location-and-icon">
             <i className="fa-solid fa-location-dot location-icon"></i>
             <h1>
-              {city},{country}
+              {city} , {country}
             </h1>
           </div>
         </div>

@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <div className="weather-app gx-0 mt-2">
+        <div className="weather-app gx-0">
           <SearchEngine />
           <LocationCountry />
           <TemperatureIcon />

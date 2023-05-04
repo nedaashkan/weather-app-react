@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .App {
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 * {
   box-sizing: border-box;
@@ -7,13 +9,28 @@
   margin: 0;
 }
 body {
-  background-color: #000000;
+  padding-top: 2em;
+  background-image: linear-gradient(
+    to top,
+    #4c4649,
+    #585259,
+    #605f6a,
+    #666d7a,
+    #6a7c89,
+    #6b8794,
+    #6c939d,
+    #6e9ea3,
+    #6ba7ab,
+    #68b1b2,
+    #65bab9,
+    #62c4be
+  );
   color: #ffffff;
   text-shadow: -1.51px 2.26px 0.75px rgba(0, 0, 0, 0.1);
+  min-height: 100vh;
 }
 
 .weather-app {
-  background: linear-gradient(248.66deg, #a28f8f 0%, #0b3638 100%);
   border-radius: 10px;
   padding: 10px 15px;
 }
@@ -23,8 +40,8 @@ body {
   line-height: 31px;
 }
 .App h2 {
-  font-weight: 100;
-  font-size: 80px;
+  font-weight: 200;
+  font-size: 90px;
   line-height: 156px;
 }
 .App h3 {
