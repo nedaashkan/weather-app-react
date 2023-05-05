@@ -1,4 +1,3 @@
-import axios from "axios";
 import "../css/SearchEngine.css";
 export default function SearchButton() {
   return (
