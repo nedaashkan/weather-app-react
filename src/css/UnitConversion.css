@@ -1,0 +1,24 @@
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffffff;
+}
+/* .active {
+  color: #afdfff;
+} */
+
+.active:hover {
+  text-decoration: none;
+  /* color: #afdfff; */
+}
+.line {
+  border-left: solid 1px #ffffff;
+  margin: 0 5px;
+  font-size: 20px;
+}
+.celsius,
+.fahrenheit {
+  font-size: 25px;
+}
