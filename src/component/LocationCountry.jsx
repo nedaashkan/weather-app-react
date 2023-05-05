@@ -11,9 +11,7 @@ export default function LocationCountry(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
-      date: "April‘ 5",
-      day: "Wednesday",
-      time: "10:18",
+      date: new Date(response.data.dt * 1000),
       city: response.data.name,
       country: response.data.sys.country,
       temperature: Math.round(response.data.main.temp),
@@ -28,8 +26,6 @@ export default function LocationCountry(props) {
       city,
       country,
       date,
-      day,
-      time,
       temperature,
       humidity,
       wind,
@@ -54,7 +50,7 @@ export default function LocationCountry(props) {
           temperature={temperature}
         />
         <DateWeather date={date} description={description} />
-        <DayTime day={day} time={time} />
+        <DayTime date={date} />
         <WeatherInformation humidity={humidity} wind={wind} />
       </span>
     );
