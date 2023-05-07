@@ -5,13 +5,13 @@ a {
 a:hover {
   color: #ffffff;
 }
-/* .active {
+.active {
   color: #afdfff;
-} */
+}
 
 .active:hover {
   text-decoration: none;
-  /* color: #afdfff; */
+  color: #afdfff;
 }
 .line {
   border-left: solid 1px #ffffff;
