@@ -3,7 +3,6 @@ import React from "react";
 import DateWeather from "./DateWeather";
 import DayTime from "./DayTime";
 import WeatherInformation from "./WeatherInformation";
-import WeeklyForecast from "./WeeklyForecast";
 import UnitConversion from "./UnitConversion";
 import CodeInformation from "./CodeInformation";
 
@@ -39,7 +38,6 @@ export default function LocationCountry(props) {
       <DateWeather date={date} description={description} />
       <DayTime date={date} />
       <WeatherInformation humidity={humidity} wind={wind} />
-      <WeeklyForecast />
       <CodeInformation />
     </span>
   );
