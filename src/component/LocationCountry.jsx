@@ -3,8 +3,8 @@ import React from "react";
 import DateWeather from "./DateWeather";
 import DayTime from "./DayTime";
 import WeatherInformation from "./WeatherInformation";
-import UnitConversion from "./UnitConversion";
 import CodeInformation from "./CodeInformation";
+import TemperatureIcon from "./TemperatureIcon";
 import WeeklyForecast from "./WeeklyForecast";
 
 export default function LocationCountry(props) {
@@ -32,10 +32,11 @@ export default function LocationCountry(props) {
           </div>
         </div>
       </div>
-      <UnitConversion
+      <TemperatureIcon
         icon={weatherIcon}
         description={description}
         temperature={temperature}
+        text={"C°"}
       />
       <DateWeather date={date} description={description} />
       <DayTime date={date} />

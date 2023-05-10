@@ -1,6 +1,5 @@
 import "../css/UnitConversion.css";
 import React, { useState } from "react";
-import TemperatureIcon from "./TemperatureIcon";
 
 export default function UnitConversion(props) {
   let [unit, setUnit] = useState("celsius");
@@ -59,12 +58,6 @@ export default function UnitConversion(props) {
             </div>
           </div>
         </div>
-        <TemperatureIcon
-          icon={props.icon}
-          description={props.description}
-          temperature={fahrenheit}
-          text={"F°"}
-        />
       </span>
     );
   }
