@@ -18,6 +18,7 @@ export default function SearchButton(props) {
       wind: Math.round(response.data.wind.speed),
       description: response.data.weather[0].main,
       weatherIcon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      coordinates: response.data.coord,
     });
   }
 

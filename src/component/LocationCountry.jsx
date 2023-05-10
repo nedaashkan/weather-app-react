@@ -5,6 +5,7 @@ import DayTime from "./DayTime";
 import WeatherInformation from "./WeatherInformation";
 import UnitConversion from "./UnitConversion";
 import CodeInformation from "./CodeInformation";
+import WeeklyForecast from "./WeeklyForecast";
 
 export default function LocationCountry(props) {
   const {
@@ -16,6 +17,7 @@ export default function LocationCountry(props) {
     wind,
     description,
     weatherIcon,
+    coordinates,
   } = props.data;
 
   return (
@@ -38,6 +40,7 @@ export default function LocationCountry(props) {
       <DateWeather date={date} description={description} />
       <DayTime date={date} />
       <WeatherInformation humidity={humidity} wind={wind} />
+      <WeeklyForecast coord={coordinates} />
       <CodeInformation />
     </span>
   );
