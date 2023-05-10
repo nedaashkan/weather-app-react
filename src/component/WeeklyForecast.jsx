@@ -4,9 +4,14 @@ import axios from "axios";
 import WeatherForecastDay from "./WeatherForecastDay";
 
 export default function WeeklyForecast(props) {
+  let coordinates = props.coord;
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState(null);
-  
+
+  useEffect(() => {
+    setLoaded(false);
+  }, [coordinates]);
+
   function handleResponse(response) {
     setForecast(response.data.daily);
     setLoaded(true);
@@ -28,7 +33,6 @@ export default function WeeklyForecast(props) {
       </div>
     );
   } else {
-    let coordinates = props.coord;
     let appKey = "ab8e7ef210556986d1c9a75d6007b825";
     let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${appKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
